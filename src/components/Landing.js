@@ -4,11 +4,12 @@ import '../styles/landing.scss'
 import monkeyLogo from '../assets/monkeyLogo.png';
 import vegetables from '../assets/veg-char.png';
 import play from '../assets/play.png';
+import avatar from '../assets/avatar.png';
 
 const Landing = () => {
     return (
         <>
-            <section>
+            <section className='firstSec'>
                 <nav>
                     <div className="logo">
                         <img src={monkeyLogo} alt="" />
@@ -33,10 +34,47 @@ const Landing = () => {
                     </div>
                 </section>
                 <div className='download'>
+                    <div>
                     <button className='downloadBtn'>Download</button>
                     <img src={play} alt="" />
+
+                    </div>
                 </div>
             </section>
+            <section className='comments'>
+                <div>
+                    <fieldset className="fieldset-1">
+                        <legend>
+                            Karen -New York
+                            <img src={avatar} alt="" />
+                        </legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </fieldset>
+                    <fieldset className="fieldset-2">
+                        <legend>
+                            Karen -New York
+                            <img src={avatar} alt="" />
+                        </legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </fieldset>
+                    <fieldset className="fieldset-3">
+                        <legend>
+                            Karen -New York
+                            <img src={avatar} alt="" />
+                        </legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </fieldset>
+                    <fieldset className="fieldset-4">
+                        <legend>
+                            Karen -New York
+                            <img src={avatar} alt="" />
+                        </legend>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </fieldset>
+                </div>
+            </section>
+
+
         </>
     )
 }

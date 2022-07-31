@@ -1,17 +1,17 @@
-section{
+.firstSec{
+    overflow-x: none;
     flex-direction: column;
-    height: 60vh;
     background: url('../assets/Background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     nav{
-        width: 90vw;
+        width: 95%;
         font-size: 12px;
         margin-top:1.5rem ;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         div{
             position: relative;
@@ -24,12 +24,15 @@ section{
             }
         }
         ul{
-            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
             list-style: none;
             letter-spacing: 0.48px;
             line-height: 16px;
             li{    
                 display:inline;
+                align-self: flex-end;
                 margin: 0 1rem;
                 a{
                     color: black;
@@ -44,8 +47,9 @@ section{
         }
     }
     .welcome{
+        @extend .firstSec;
         flex-direction: row;
-        margin-top:3rem ;
+        height: 25rem   ;
         div{
             text-align: right;
             flex-direction: column;
@@ -67,18 +71,18 @@ section{
             
         }
         .vegetablesCont{
-            position: relative;
+            position: absolute;
             background-color: rgba(255, 255, 255, 0.125);
             border-radius: 100%;
             padding: 1rem;
             width: 32rem;
             height: 30rem;
-            top: 3.5rem;
-            right: 1rem;
+            top: 12%;
+            right: 15%;
             img{
                 position: relative;
-                left: 2rem;
-                top: 3.5rem;
+                left: 5%;
+                top: 8%;
                 width: 20rem;
                 height: 25rem;
 
@@ -86,11 +90,47 @@ section{
         }
     }
     .download{
-        width: 50%;
-        margin-top:1.5rem;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
         gap: 2rem;
-        
-        
-        
+        padding: 2rem 0;
+        div{
+            position: relative;
+            left: 25%;
+        }
+    }
+}
+
+.comments{
+    background: url('../assets/phonediag.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    div{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 770px;
+        height: 770px;
+        margin: 0 auto;
+        gap: 4rem;
+        fieldset{
+            width: 15rem;
+            border-radius: 20px;
+            backdrop-filter: blur(33px);
+            border-color: #FFCD3E;
+            text-align: right;
+            legend{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        .fieldset-2{
+           text-align: left;
+        }
+        .fieldset-3{
+          text-align: right;
+        }
     }
 }
