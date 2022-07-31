@@ -68,7 +68,6 @@
                     color: white;
                 }
             }
-            
         }
         .vegetablesCont{
             position: absolute;
@@ -77,8 +76,8 @@
             padding: 1rem;
             width: 32rem;
             height: 30rem;
-            top: 12%;
-            right: 15%;
+            top: 18%;
+            right: 8%;
             img{
                 position: relative;
                 left: 5%;
@@ -90,12 +89,11 @@
         }
     }
     .download{
-        width: 100%;
         background-color: white;
         justify-content: center;
-        gap: 2rem;
         padding: 2rem 0;
         div{
+            gap: 2rem;
             position: relative;
             left: 25%;
         }
@@ -120,17 +118,133 @@
             backdrop-filter: blur(33px);
             border-color: #FFCD3E;
             text-align: right;
+            position: relative;
             legend{
                 display: flex;
                 align-items: center;
                 gap: 1rem;
             }
         }
+        .fieldset-1{
+            right: 20%;
+            top: 10%;
+        }
         .fieldset-2{
-           text-align: left;
+            text-align: left;
+            right: 0%;
+            left: 10%;
+            top: 8%;
         }
         .fieldset-3{
-          text-align: right;
+            text-align: right;
+            right: 15%;
+        }
+        .fieldset-4{
+            text-align: right;
+            right: 0%;
+            left: 15%;
+            bottom: 8%;
+        }
+    }
+}
+.appShow{
+    margin-top: 10%;
+    padding: 10% 0;
+    background: url('../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .cont{
+        .row{
+            flex-direction: row;
+        }
+        .card{
+            background-color: white;
+            border-radius: 20px;
+            align-items: center;
+            z-index: 1;
+            transform: scale(0.7);
+            box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.353);
+            p,small{
+                color: black;
+            }
+            p,b{
+                margin: 0.5rem 1rem;
+            } 
+            b{
+                color: #FA7303;
+            }
+            .recipies{
+                position:relative;
+                bottom: 1rem;
+                width: fit-content;
+                background-color: #BADA00;
+                border-radius: 100%;
+                padding: 8px;
+            }
+            div{
+                gap:0
+            }
+        }
+        .phoneShow{
+            width: 80vw;
+            height: 80vh;
+            .phoneCont{
+                position: absolute;
+                padding: 5rem;
+                background-color: rgba(255, 255, 255, 0.125);
+                border-radius: 100%;
+                .imgCont{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        div{
+            width: 30vw;
+            margin: 0 5%;
+            flex-direction: column;
+            text-align: right;
+            gap: 1rem;
+            h2{
+                font-size: 4rem;
+                margin: 0;
+            }
+            p{
+                color: white;
+            }
+            button{
+                align-self: flex-end;
+            }
+        }
+        .carta1{
+            position: relative;
+            right: 25%;
+            top: 5%;
+        }
+        .carta2{
+            position: relative;
+            left: 33%;
+            top: 10%;
+        }
+        .carta3{
+            position: relative;
+            right: 25%;
+            top: 32%;
+        }
+        .carta4{
+            z-index: 1;
+            transform: scale(0.7);
+            position: relative;
+            bottom: 25%;
+            right: 13%;
+        }
+        .carta5{
+            z-index: 1;
+            transform: scale(0.7);
+            position: relative;
+            bottom: 25%;
         }
     }
 }
