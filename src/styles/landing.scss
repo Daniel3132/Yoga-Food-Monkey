@@ -1,0 +1,96 @@
+section{
+    flex-direction: column;
+    height: 60vh;
+    background: url('../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    nav{
+        width: 90vw;
+        font-size: 12px;
+        margin-top:1.5rem ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            position: relative;
+            margin: 0 3rem;
+            height: 0px;
+            img{
+                background-color: rgba(255, 255, 255, 0.125);
+                border-radius: 100%;
+                padding: 3rem;
+            }
+        }
+        ul{
+            width: 70%;
+            list-style: none;
+            letter-spacing: 0.48px;
+            line-height: 16px;
+            li{    
+                display:inline;
+                margin: 0 1rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+                    border-bottom: 1px solid black ;
+                }
+            }
+        }
+        button{
+            background-color: #FD7003;
+            padding: 0.5rem 2rem;
+        }
+    }
+    .welcome{
+        flex-direction: row;
+        margin-top:3rem ;
+        div{
+            text-align: right;
+            flex-direction: column;
+            width: 45%;
+            h1{
+                margin: 0;
+                padding: 0;
+                line-height: 100%;
+                font-weight: 600;
+                font-size: 90px;
+            }
+            div{
+                align-self: flex-end;
+                width: 50%;
+                p{
+                    color: white;
+                }
+            }
+            
+        }
+        .vegetablesCont{
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.125);
+            border-radius: 100%;
+            padding: 1rem;
+            width: 32rem;
+            height: 30rem;
+            top: 3.5rem;
+            right: 1rem;
+            img{
+                position: relative;
+                left: 2rem;
+                top: 3.5rem;
+                width: 20rem;
+                height: 25rem;
+
+            }
+        }
+    }
+    .download{
+        width: 50%;
+        margin-top:1.5rem;
+        gap: 2rem;
+        
+        
+        
+    }
+}
