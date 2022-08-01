@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+.init{
+    h2{
+        font-size: 2rem;
+        font-family: 'Quicksand', sans-serif;
+        letter-spacing: normal;
+    }
+    margin: 2rem ;
+    width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .cardsCont{
+        margin: 2rem 0 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        .card{
+            width: 8rem;
+            height: 12rem;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid grey;
+            border-radius: 10px;
+            img{
+                width: 6rem;
+                height: 6rem;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+        .cardLunch{
+            @extend .card;
+            flex-direction: row;
+            width: 90%;
+            height: 8rem;
+            div{
+                flex-direction: column;
+                b{
+                    align-self: flex-start;
+                    font-size: 1.5rem;
+                }
+            }
+            img{
+                position: relative;
+                right: 1.5rem;
+            }
+        }
+    }
+    .filters{
+        margin-top: 2rem;
+        gap: 2rem;
+        button{
+            border: 1px solid black;
+            padding: 0.5rem 2rem;
+            border-radius: 400px;
+            background-color: white;
+            color: black;
+        }
+        .active{
+            background-color: orange;
+            border: none;
+        }
+    }
+}
+
+.form{
+    margin: 5%;
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    h2{
+        font-size: 3rem;
+        font-family: 'Quicksand', sans-serif;
+        letter-spacing: normal;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .question{
+        flex-direction: column;
+        margin: 2rem 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid grey;
+        .options{
+            width: fit-content;
+            margin: 0 auto;
+            input,label{
+                width: fit-content;
+            }
+        }
+    }
+    button{
+        background-color: orange;
+        border-radius: 400px;
+        color: black;
+        padding: 1rem 2rem;
+    }
+}

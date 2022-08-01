@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/landing.scss'
 import monkeyLogo from '../assets/monkeyLogo.png';
 import vegetables from '../assets/veg-char.png';
@@ -52,7 +52,7 @@ const Landing = () => {
                 <div className='download'>
                     <div>
                         <button onClick={()=>navigate('/users')} className='downloadBtn'>Download</button>
-                        <img src={play} alt="" />
+                        <img src={play} alt="" onClick={()=>navigate('/app')}/>
                         <img className='burger' src={burger} alt="" />
                     </div>
                 </div>
