@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import '../styles/landing.scss'
 import monkeyLogo from '../assets/monkeyLogo.png';
 import vegetables from '../assets/veg-char.png';
 import play from '../assets/play.png';
+import burger from '../assets/burger.png';
+import burgerw from '../assets/Burgerw.png';
 import avatar from '../assets/avatar.png';
 import mealsPhone from '../assets/mealsphone.png';
 import recipies from '../assets/recipies.png';
@@ -13,9 +15,14 @@ import calories from '../assets/calories.png';
 import delicious from '../assets/delicious.png';
 import healthy from '../assets/healthy.png';
 import plato from '../assets/plato.png';
+import Twitter from '../assets/Twitter.png';
+import Facebook from '../assets/Facebook.png';
+import Linkedin from '../assets/Linkedin.png';
 import MonkeyLogo2 from '../assets/Monkey-Logo-3.png';
+import Arrow from '../assets/Arrow.png';
 
 const Landing = () => {
+    const navigate = useNavigate();
     return (
         <>
             <section className='firstSec'>
@@ -33,7 +40,7 @@ const Landing = () => {
 
                 <section className="welcome">
                     <div>
-                        <h1>Greatest Habits</h1>
+                        <h1>Greatest Habits.</h1>
                         <div>
                             <p>Good nutrition can help: Reduce the risk of some diseases, including heart disease, diabetes, stroke, some cancers, and osteoporosis.</p>
                         </div>
@@ -46,11 +53,12 @@ const Landing = () => {
                     <div>
                         <button className='downloadBtn'>Download</button>
                         <img src={play} alt="" />
+                        <img className='burger' src={burger} alt="" />
                     </div>
                 </div>
             </section>
 
-            <section className='comments'>
+             <section className='comments'>
                 <div>
                     <fieldset className="fieldset-1">
                         <legend>
@@ -82,9 +90,11 @@ const Landing = () => {
                     </fieldset>
                 </div>
             </section>
+                <img className='burger' src={burgerw} alt="" />
 
             <section className="appShow">
                 <div className="cont">
+                <img className='burger' src={burgerw} alt="" />
                     <div className='phoneShow'>
                         <div className='card recipiesCont carta1'>
                             <div className="recipies">
@@ -129,47 +139,67 @@ const Landing = () => {
                         <button className='downloadBtn'>Download</button>
                     </div>
                 </div>
+
             </section>
 
             <footer>
                 <div>
                     <div>
-                        <img src={MonkeyLogo2} alt="" />
+                        <img className='responsive' src={MonkeyLogo2} alt="" />
                         <b>+0 (0000) 000 00-00</b>
                         <p>danielcorrea3131@gmail.com</p>
                     </div>
                     <div>
                         <strong>Quick Links</strong>
-                        <ul>
-                            <li>product</li>
-                            <li>Company</li>
-                            <li>Information</li>
-                            <li>Foonkie monkey</li>
-                        </ul>
+                        <div className='linksCont responsive'>
+                            <div>
+                                <Link to='/'>Product</Link>
+                                <Link to='/'>Information</Link>
+                            </div>
+                            <div>
+                                <Link to='/'>Company</Link>
+                                <Link to='/'>Foonkie monkey</Link>
+                            </div>
+                        </div>
+                        <select name="links" className='selector' onChange={(e)=>navigate(e.target.value)}>
+                            <option value="Producto">Producto</option>
+                            <option value="company">Company</option>
+                            <option value="Information">Information</option>
+                            <option value="Foonkie monkey">Foonkie monkey</option>
+                        </select>
                     </div>
                     <div>
                         <strong>Subscribe</strong>
                         <div>
                             <input type="text" name="" id="" />
-                            <button type="submit">&gt;</button>
+                            <button type="submit">
+                                <img src={Arrow} alt="" />
+                            </button>
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                <div className='footer2'>
+                    <div className='redesCont'>
+                        <div className='circleRedes'>
+                            <img src={Linkedin} alt="" />
+                        </div>
+                        <div className='circleRedes'>
+                            <img src={Facebook} alt="" />
+                        </div>
+                        <div className='circleRedes'>
+                            <img src={Twitter} alt="" />
+                        </div>
                     </div>
                     <div>
-                        <p>Powered by <img src={MonkeyLogo2} alt="" /></p>
+                        <div>
+                            <p className='responsive'>Powered by </p>
+                            <img src={MonkeyLogo2} alt="" />
+                        </div>
                     </div>
-                    <div>
+                    <div className='redesCont'>
                         <p>© 2021 FM. All rights reserved</p>
                     </div>
                 </div>
-
             </footer>
         </>
     )

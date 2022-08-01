@@ -1,0 +1,149 @@
+.appShow{
+    margin-top: 10%;
+    padding: 10% 0;
+    background: url('../../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .cont{
+        .row{
+            flex-direction: row;
+        }
+        .card{
+            background-color: white;
+            border-radius: 20px;
+            align-items: center;
+            z-index: 1;
+            transform: scale(0.7);
+            box-shadow: 3px 5px 5px 2px rgba(0, 0, 0, 0.353);
+            p,small{
+                color: black;
+            }
+            p,b{
+                margin: 0.5rem 1rem;
+            } 
+            b{
+                color: #FA7303;
+            }
+            .recipies{
+                position:relative;
+                bottom: 1rem;
+                width: fit-content;
+                background-color: #BADA00;
+                border-radius: 100%;
+                padding: 8px;
+            }
+            div{
+                gap:0
+            }
+        }
+        .phoneShow{
+            width: 80vw;
+            height: 80vh;
+            .phoneCont{
+                position: absolute;
+                padding: 5rem;
+                background-color: rgba(255, 255, 255, 0.125);
+                border-radius: 100%;
+                .imgCont{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        div{
+            width: 30vw;
+            margin: 0 5%;
+            flex-direction: column;
+            text-align: right;
+            gap: 1rem;
+            h2{
+                font-size: 4rem;
+                margin: 0;
+            }
+            p{
+                color: white;
+            }
+            button{
+                align-self: flex-end;
+            }
+        }
+        .carta1{
+            position: relative;
+            right: 25%;
+            top: 5%;
+        }
+        .carta2{
+            position: relative;
+            left: 33%;
+            top: 10%;
+        }
+        .carta3{
+            position: relative;
+            right: 25%;
+            top: 10rem;
+        }
+        .carta4{
+            z-index: 1;
+            transform: scale(0.7);
+            position: relative;
+            bottom: 25%;
+            right: 13%;
+        }
+        .carta5{
+            z-index: 1;
+            transform: scale(0.7);
+            position: relative;
+            bottom: 18%;
+        }
+    }
+    @media (max-width: 800px) {
+        .cont{
+            flex-direction: column-reverse;
+            .card{
+                align-items: center;
+                .recipies{
+                    position:initial;
+                }
+            }
+            .phoneShow{
+                .phoneCont{
+                    .imgCont{
+                        img{
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+            div{
+                width: 85vw;
+                text-align: center;
+                margin-bottom: 2rem;
+                button{
+                    align-self: center;
+                }
+            }
+            .carta1{
+                width: 9rem;
+                right: 25%;
+                top: -6%;
+            }
+            .carta2{
+                left: 15%;
+                top: 50%;
+            }
+            .carta3{
+                display: none;
+            }
+            .carta5{
+                bottom: 18%;
+            }
+        }
+        .burger{
+            position: relative;
+            margin-top: 3rem;
+            left: 28%;
+        }
+    }
+}

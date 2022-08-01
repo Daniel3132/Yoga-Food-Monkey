@@ -10,16 +10,26 @@ body {
     display: flex;
     flex-direction: column;
 }
-h1,h2,h3,h4{
+section,
+div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // border: 1px solid red;
+}
+h1,
+h2,
+h3,
+h4{
     font-family: 'Pridi', serif;
 }
 footer{
     font-family: 'Epilogue', sans-serif;
 }
-img,button{
+img,
+button{
     cursor: pointer;
 }
-
 button{
     border: none;
     color: white;
@@ -33,9 +43,14 @@ button{
     padding: 1rem 4rem;
     box-shadow: 5px -3px 0px 2px inset;;
 }
-section,div{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
+.burger{
+    display: none;
+}
+@media (max-width: 800px) {
+    .burger{
+        display: block;
+    }
+    .responsive{
+        display: none;
+    }
 }

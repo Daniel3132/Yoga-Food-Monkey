@@ -1,0 +1,64 @@
+.comments{
+    background: url('../../assets/phonediag.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    div{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 770px;
+        height: 770px;
+        margin: 0 auto;
+        gap: 4rem;
+        fieldset{
+            width: 15rem;
+            border-radius: 20px;
+            backdrop-filter: blur(33px);
+            border-color: #FFCD3E;
+            text-align: right;
+            position: relative;
+            legend{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        .fieldset-1{
+            right: 20%;
+            top: 10%;
+        }
+        .fieldset-2{
+            text-align: left;
+            right: 0%;
+            left: 10%;
+            top: 8%;
+        }
+        .fieldset-3{
+            text-align: right;
+            right: 15%;
+        }
+        .fieldset-4{
+            text-align: right;
+            right: 0%;
+            left: 15%;
+            bottom: 8%;
+        }
+    }
+    @media (max-width: 800px) {
+        background-attachment:scroll;
+        background-size: contain;
+        div{
+            width: 770px;
+            height: 770px;
+            .fieldset-1,
+            .fieldset-2{
+                position: initial;
+            }
+            .fieldset-3,
+            .fieldset-4{
+                display: none;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,154 @@
+.firstSec{
+    overflow-x: none;
+    flex-direction: column;
+    background: url('../../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    nav{
+        width: 95%;
+        font-size: 12px;
+        margin-top:1.5rem ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            position: relative;
+            margin: 0 3rem;
+            height: 0px;
+            img{
+                background-color: rgba(255, 255, 255, 0.125);
+                border-radius: 100%;
+                padding: 3rem;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            list-style: none;
+            letter-spacing: 0.48px;
+            line-height: 16px;
+            li{    
+                display:inline;
+                align-self: flex-end;
+                margin: 0 1rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+                    border-bottom: 1px solid black ;
+                }
+            }
+            button{
+                background-color: #FD7003;
+                padding: 0.5rem 2rem;
+            }
+        }
+    }
+    .welcome{
+        @extend .firstSec;
+        flex-direction: row;
+        height: 25rem;
+        div{
+            text-align: right;
+            flex-direction: column;
+            width: 50%;
+            h1{
+                margin: 0;
+                padding: 0;
+                line-height: 100%;
+                font-weight: 600;
+                font-size: 7rem;
+            }
+            div{
+                align-self: flex-end;
+                width: 50%;
+                p{
+                    color: white;
+                }
+            }
+        }
+        .vegetablesCont{
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.125);
+            border-radius: 100%;
+            padding: 1rem;
+            width: 32rem;
+            height: 30rem;
+            top: 18%;
+            right: 5%;
+            img{
+                position: relative;
+                left: 5%;
+                top: 8%;
+                width: 20rem;
+                height: 25rem;
+            }
+        }
+    }
+    .download{
+        background-color: white;
+        justify-content: center;
+        padding: 2rem 0;
+        div{
+            width: fit-content;
+            gap: 2rem;
+            position: relative;
+            right: 10%;
+            
+        }
+    }
+    @media (max-width: 800px) {
+        nav{
+            div{
+                height: 3rem;
+                justify-content: center;
+                margin-bottom: 5rem;
+            }
+            ul{
+                display: none;
+            }
+        }
+        .welcome{
+            flex-direction: column;
+            div{
+                text-align: center;
+                h1{
+                    font-size: 5rem;
+                }
+                div{
+                    width: 100%;
+                    p{
+                        width: 80vw;
+                    }
+                }
+            }
+            .vegetablesCont{
+                position: relative;
+                width: 20rem;
+                top: 0;
+                right: 0;
+                img{
+                    position: relative;
+                    width: 12rem;
+                    height: 18rem;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        .download{
+            margin-top: 8rem;
+            padding-top: 5rem;
+            div{
+                position: static;
+                .burger{
+                    display: block;
+                }
+            }
+        }
+            
+    
+    }
+}
