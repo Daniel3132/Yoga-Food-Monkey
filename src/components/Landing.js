@@ -51,7 +51,7 @@ const Landing = () => {
                 </section>
                 <div className='download'>
                     <div>
-                        <button className='downloadBtn'>Download</button>
+                        <button onClick={()=>navigate('/users')} className='downloadBtn'>Download</button>
                         <img src={play} alt="" />
                         <img className='burger' src={burger} alt="" />
                     </div>
@@ -136,7 +136,7 @@ const Landing = () => {
                         <div>
                             <p>Good nutrition can help: Reduce the risk of some diseases, including heart disease, diabetes, stroke, some cancers, and osteoporosis.</p>
                         </div>
-                        <button className='downloadBtn'>Download</button>
+                        <button onClick={()=>navigate('/users')} className='downloadBtn'>Download</button>
                     </div>
                 </div>
 

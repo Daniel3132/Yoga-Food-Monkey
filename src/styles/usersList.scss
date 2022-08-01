@@ -1,0 +1,109 @@
+#usersList{
+    flex-direction: column;
+    background: url('../assets/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: fit-content;
+    .nav{
+        width: 90%;
+        flex-direction: row;
+        h2{
+            margin: 2rem auto;
+            font-size: 3rem;
+        }
+        button{
+            position: relative;
+            left: 0;
+        }
+    }
+    .Cont{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 6rem;
+        div{
+            background-color: rgba(255, 255, 255, 0.139);
+            min-width:fit-content;
+            width: 8rem;
+            height: fit-content;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 2px 6px 5px 2px rgba(0, 0, 0, 0.531);
+            h3{
+                margin: 0;
+            }
+            img{
+                width: 4rem;
+                height: 4rem;
+                border-radius: 100%;
+                margin-top: 1rem;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .btnCont{
+        width: 90%;
+        margin: 4rem 0 2rem;
+        justify-content: space-between;
+    }
+    button{
+        justify-self: flex-start;
+        background-color: black;
+        padding: 1rem 3rem;
+    }
+    .modal{
+        font-size: larger;
+        flex-direction: column;
+        border: 2px solid white;
+        box-shadow: 2px 6px 5px 2px rgba(0, 0, 0, 0.531);
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 15rem;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin:auto;
+        div{
+            flex-direction: column;
+            h3{
+                margin: 0;
+            }
+            img{
+                width: 10rem;
+                height: 10rem;
+                border: 5px solid orange;
+                border-radius: 100%;
+                margin-top: 1rem;
+            }
+        }
+        button{
+            align-self: flex-start;
+            padding: 1rem;
+            border-radius: 100%;
+            border: 1px solid white;
+        }
+    }
+    @media (max-width: 800px) {
+        .nav{
+            flex-direction: column;
+            button{
+                position: static;
+                align-self: flex-start;
+                margin-top: 2rem;
+            }
+        }
+        
+    }
+}

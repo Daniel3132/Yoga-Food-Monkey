@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Landing from '../components/Landing'
+import UsersApi from '../components/UsersApi'
 import Application from './Application'
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Landing/>} />
       <Route path='/landing' index element={<Landing/>} />
+      <Route path='/users' index element={<UsersApi/>} />
       <Route path='/app' element={<Application/>}/>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
