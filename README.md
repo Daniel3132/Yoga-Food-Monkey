@@ -1,3 +1,14 @@
+
+## Yoga Food
+
+botones de download y play en la landing page llevan a lista de usuarios y a la App (movil) respectivamente.
+
+# app - se puede acceder con la ruta /app
+en Meals: 
+* Lunch lleva al otro menú
+* Breakfast lleva al otro form
+* 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
