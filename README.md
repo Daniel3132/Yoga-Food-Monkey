@@ -1,13 +1,20 @@
 
 ## Yoga Food
 
-botones de download y play en la landing page llevan a lista de usuarios y a la App (movil) respectivamente.
+Los botones de download y play en la landing page llevan a lista de usuarios y a la App (movil) respectivamente.
 
-# app - se puede acceder con la ruta /app
+# App - se puede acceder con la ruta /app
 en Meals: 
 * Lunch lleva al otro menú
 * Breakfast lleva al otro form
-* 
+
+# 1. clonar el proyecto
+
+# 2. npm install
+
+# 3. npm run start
+
+# desplegable: https://yoga-food-monkey-knhwgobsp-daniel3132.vercel.app/app/lunch
 
 # Getting Started with Create React App
 
